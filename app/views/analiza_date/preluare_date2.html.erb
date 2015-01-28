@@ -1,0 +1,16 @@
+<h1>AnalizaDate#preluare_date2</h1>
+<p>Find me in app/views/analiza_date/preluare_date2.html.erb</p>
+<br />
+<h3><%= @rezultat %></h3>
+
+<%= form_tag("/analiza", method: "get") do %>
+  <%= radio_button_tag @radio_name, @radio_value1 %>
+	<%= label_tag @label_name1, @label_content1 %><br />
+	<%= radio_button_tag @radio_name, @radio_value2 %>
+	<%= label_tag @label_name2, @label_content2 %><br />
+	<%= radio_button_tag @radio_name, @radio_value3 %>
+	<%= label_tag @label_name3, @label_content3 %><br />
+	<%= radio_button_tag @radio_name, @radio_value4 %>
+	<%= label_tag @label_name4, @label_content4 %><br />
+  <%= submit_tag("Trimite") %>
+<% end %>

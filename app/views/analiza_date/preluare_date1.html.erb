@@ -1,0 +1,15 @@
+<h1>AnalizaDate#preluare_date1</h1>
+<p>Find me in app/views/analiza_date/preluare_date1.html.erb</p>
+<br />
+<h3>Ce tip de bautură ai consumat în ultima oră?</h3>
+
+<%= form_tag("/date2", method: "get") do %>
+  <%= radio_button_tag(:tip_bautura, "bere") %>
+	<%= label_tag(:bere, "Bere") %><br />
+	<%= radio_button_tag(:tip_bautura, "vin") %>
+	<%= label_tag(:vin, "Vin") %><br />
+	<%= radio_button_tag(:tip_bautura, "tarie") %>
+	<%= label_tag(:tarie, "Tărie") %><br />
+
+  <%= submit_tag("Trimite") %>
+<% end %>
